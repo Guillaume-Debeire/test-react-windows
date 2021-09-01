@@ -1,6 +1,8 @@
 @use 'src/styles/vars';
 
 .body {
+    width: 80%;
+    margin: auto;
 
     &-header {
         margin: 2em;
@@ -17,4 +19,26 @@
             font-size: 20px;
         }
     }
+}
+
+.quotes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quote {
+    // background-image: url("../../assets/images/quotes.png");
+    margin: 1em auto;
+    width: 40%;
+    &-text{
+        font-style: italic;
+        color: vars.$light-classic;
+        &:hover {
+            color: vars.$dark-color;
+        }
+    }
+    &-name{
+        font-weight: 600;
+    }
+    
 }
