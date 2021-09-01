@@ -1,0 +1,63 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.header {
+    border-bottom: 1px solid rgba(182, 182, 182, 0.363);
+}
+.nav {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+
+
+    &-item {
+        padding: 0 1em;
+        margin: 0.5em;
+    }
+}
+
+.bigName {
+    font-size: large;
+    font-weight: bold;
+}
+
+.follow {
+    background-color: vars.$primary-color;
+    color: vars.$light-color;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: color.scale(vars.$primary-color, $lightness: -10%);
+    }
+}
+
+.mail {
+    background-color: vars.$primary-color;
+    color: vars.$light-color;
+    padding: 0.5em;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: color.scale(vars.$primary-color, $lightness: -10%);
+    }
+}
+
+.signIn {
+    color: vars.$primary-color;
+}
+
+.getStarted {
+    color: vars.$primary-color;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    border: 1px solid vars.$primary-color;
+
+    &:hover {
+        background-color: vars.$primary-color;
+        color: vars.$light-color;
+    }
+}
