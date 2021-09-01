@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'src/styles/vars';
 
 .body {
@@ -32,13 +33,20 @@
     width: 40%;
     &-text{
         font-style: italic;
-        color: vars.$light-classic;
+        color: vars.$dark-color;
+        padding: 1.5em;
         &:hover {
             color: vars.$dark-color;
         }
     }
     &-name{
         font-weight: 600;
+    }
+    &-symbol{
+
+        color: color.scale(vars.$primary-color, $alpha: -70%);
+        position: fixed;
+        font-size: 80px;
     }
     
 }
