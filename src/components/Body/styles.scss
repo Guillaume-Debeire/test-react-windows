@@ -34,19 +34,35 @@
     &-text{
         font-style: italic;
         color: vars.$dark-color;
-        padding: 1.5em;
+        padding: 1.5em 1.5em 0.5em;
         &:hover {
             color: vars.$dark-color;
         }
     }
     &-name{
         font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            color: vars.$primary-color;
+        }
     }
     &-symbol{
 
         color: color.scale(vars.$primary-color, $alpha: -70%);
-        position: fixed;
+        position: absolute;
         font-size: 80px;
+    }
+    &-symbol2{
+        display: none;
+        color: color.scale(vars.$primary-color, $alpha: -70%);
+        position: absolute;
+        font-size: 80px;
+
+    }
+    &:hover {
+        .quote-symbol2{
+            display: block;
+        }
     }
     
 }
